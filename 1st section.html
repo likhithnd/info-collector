@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        fieldset {
+            border: none;
+            margin-bottom: 15px;
+        }
+        legend {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="textarea"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <form action="2nd section.html" method="post">
+        <fieldset><legend id="class s">contact information*</legend>
+            <fieldset class="class">
+                <legend>email*</legend>
+            <label for="email">email</label>:
+            <input type="text" placeholder="email" required id="email"><br>
+            </fieldset>
+            <fieldset class="class">
+            <legend>phone number*</legend>
+            <label for="Phone Number">Phone Number:</label>
+            <input type="tel" placeholder="Phone Number" required id="Phone Number" pattern="\+91 [0-9]{10}"
+                title="Please keep in this form +91 XXXXXXXXXX">
+            </fieldset>
+            <fieldset class="class">
+            <legend>Address*</legend>
+            <label for="a">Address:</label>
+            <input type="textarea" placeholder="Address" required id="a"><br>
+            </fieldset>
+            <input type="submit"id="submit" value="submit">
+    <a href="chatgpt.html">Previous</a><br>
+
+        </fieldset>
+        </form>
+    </body>
+</html>

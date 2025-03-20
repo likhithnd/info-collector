@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatgpt excercise</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="submit"]:hover:not(:disabled),
+input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    resize: vertical;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <header>
+        <h1>Please enter the following details</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Personal information</legend>
+            <form action="1st section.html" method="post">
+                <fieldset class="name">
+                    <legend>name*</legend>
+                    <label for="j">name:</label>
+                    <input type="text" id="j" placeholder="Full name" required><br>
+                </fieldset><br>
+                <fieldset class="name">
+                    <legend>Age*</legend>
+                    <label for="k">Age:</label>
+                    <input type="number" required min="10" max="100" id="k" placeholder="age">
+                </fieldset><br><br>
+                <fieldset class="name">
+                    <legend>Gender*</legend>
+                <label for="">Gender:</label> <br>
+                <label for="Male">Male</label>
+                <input type="radio" value="male" id="Male" name="Gender"><br>
+                <label for="female">female</label>
+                <input type="radio" value="femle" id="female" name="Gender"> <br>
+                <label for="o/ther">other</label>
+                <input type="radio" value="other" id="o/ther" name="Gender"></fieldset><br>
+                <fieldset class="name">
+<legend>file*</legend>
+                <label for="profile-pic">Upload Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept=".jpg, .png"><br>
+            </fieldset>
+        </fieldset>
+        <input type="submit" id="submit" value="submit">
+        </form>
+    </main>
+    <!-- Form Requirements:
+Personal Information Section:
+
+Full Name (Text Input, Required)
+Age (Number Input, Required, Min: 10, Max: 100)
+Gender (Radio Buttons: Male, Female, Other)
+Profile Picture (File Upload, Accept only .jpg, .png)
+Contact Information Section:
+
+Email (Email Input, Required)
+Phone Number (Tel Input, Required, Pattern: Indian Mobile Number Format +91 XXXXXXXXXX)
+Address (Textarea, Required)
+Account Information Section:
+
+Username (Text Input, Required, Max Length: 15)
+Password (Password Input, Required, Min Length: 8, Must Contain Uppercase, Lowercase, Number, and Special Character)
+Confirm Password (Password Input, Required, Should Match Password)
+Preferences Section:
+
+Select your Interests (Checkboxes: Web Development, Graphic Design, Data Science, Other)
+Preferred Contact Method (Dropdown: Email, Phone, Both)
+Terms & Conditions:
+
+Checkbox to agree to Terms & Conditions (Required)
+Buttons:
+
+Submit Button (Disabled until Terms & Conditions is checked)
+Reset Button (Clears the entire form)
+Accessibility Features:
+
+Use <label> tags properly.
+Add <fieldset> and <legend> where necessary.
+ Bonus Challenge:
+Use CSS to style the form and make it look modern and professional.
+Ensure it's responsive and looks good on both desktop and mobile devices.-->
+</body>
+
+</html>
